@@ -55,12 +55,11 @@ if __name__ == "__main__":
     plant = "Shendra_Draw"
     process = "Draw_Tower"
     # dataset = "Shendra_Draw_Tower"
-    # machines = {
-    #     "gen1": ["DT-42", "DT-43", "DT-44", "DT-45"],
-    #     "gen2": ["DT-47", "DT-48", "DT-51"],
-    # }
+    machines = {
+        "gen1": ["DT-42", "DT-43", "DT-44", "DT-45"],
+        "gen2": ["DT-47", "DT-48", "DT-51"],
+    }
     dataset = "data_engineering"
-    machines = {"gen1": ["DT-44"]}
 
     for gen in machines.keys():
         for machine in machines[gen]:
