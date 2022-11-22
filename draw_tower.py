@@ -86,7 +86,9 @@ if __name__ == "__main__":
                         df = process_csv(df, machine)
                         pipeline.upload_to_bq(df)
                         pipeline.update_audit_table(
-                            foldername, records_per_load=df.size, job_status="Success"
+                            foldername,
+                            records_per_load=df.size[0],
+                            job_status="Success",
                         )
 
                         # gen{x}_pivot_table
@@ -96,7 +98,9 @@ if __name__ == "__main__":
 
                         pipeline.move_to_archive(folder)
                         pipeline.update_audit_table(
-                            folder, records_per_load=pivot_df.size, job_status="Success"
+                            folder,
+                            records_per_load=pivot_df.size[0],
+                            job_status="Success",
                         )
 
                     except Exception as e:
