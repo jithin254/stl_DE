@@ -83,7 +83,7 @@ if __name__ == "__main__":
                         # gen{x}_main table
                         # pipeline.set_table("f{gen}_new")
                         df = process_csv(df, machine)
-                        pipeline.upload_to_bq()
+                        pipeline.upload_to_bq(df)
                         pipeline.update_audit_table(
                             foldername, records_per_load=df.size, job_status="Success"
                         )
