@@ -112,7 +112,7 @@ class Machine_Data_Pipeline:
             archive_blob_name = blob.name.replace("Staging/", "")
             print(archive_blob_name)
             blob_copy = source_bucket.copy_blob(blob, archive_bucket, archive_blob_name)
-            source_bucket.delete_blob(blob)
+            source_bucket.delete_blob(blob.name)
 
     def move_to_error(self, blobname):
         """
@@ -131,7 +131,7 @@ class Machine_Data_Pipeline:
 
     def schema_mapping(self, df, columns, datatypes):
         n = len(columns)
-        
+
         for i in range(n):
             col = columns[i]
             datatype = datatypes[i]
