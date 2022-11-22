@@ -26,7 +26,7 @@ def process_csv(df, machine):
     # Cleaning up the df
     df["DT_No"] = f"DT-{machine}"
     tagnames = json.load(
-        open(f"/home/dataengineer/shendra_draw_tower/tags/DT-{machine}_tags.json")
+        open(f"/home/dataengineer/shendra_draw_tower/tags/{machine}_tags.json")
     )
     df["TagIndex"] = df["TagIndex"].astype(str).replace(tagnames)
     print(df.head())
