@@ -58,7 +58,7 @@ if __name__ == "__main__":
     #     "gen2": ["DT-47", "DT-48", "DT-51"],
     # }
 
-    machines = {"gen1": [44]}
+    machines = {"gen1": ["DT-44"]}
 
     for gen in machines.keys():
         for machine in machines[gen]:
