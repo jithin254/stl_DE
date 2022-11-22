@@ -16,7 +16,6 @@ def read_multiple_csvs(pipeline, folder):
     blobs = list(pipeline.get_files(prefix=folder))
 
     for blob in blobs:
-        print("Reading and concatenating ", blob.name)
         file = pipeline.read_file_as_dataframe(blob, index_col=False)
         df = pd.concat([df, file])
 
@@ -26,7 +25,9 @@ def read_multiple_csvs(pipeline, folder):
 def process_csv(df, machine):
     # Cleaning up the df
     df["DT_No"] = f"DT-{machine}"
-    tagnames = json.load(open(f"dt/tags/DT-{machine}_tags.json"))
+    tagnames = json.load(
+        open(f"/home/dataengineer/shendra_draw_tower/tags/DT-{machine}_tags.json")
+    )
     df["TagIndex"] = df["TagIndex"].astype(str).replace(tagnames)
     print(df.head())
 
