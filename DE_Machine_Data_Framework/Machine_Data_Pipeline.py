@@ -109,8 +109,8 @@ class Machine_Data_Pipeline:
 
         blobs = source_bucket.list_blobs(prefix=blobname)
         for blob in blobs:
-            print(blob.name)
             archive_blob_name = blob.name.replace("Staging/", "")
+            print(archive_blob_name)
             blob_copy = source_bucket.copy_blob(blob, archive_bucket, archive_blob_name)
             source_bucket.delete_blob(blob)
 
