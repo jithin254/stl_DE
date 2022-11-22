@@ -131,7 +131,7 @@ class Machine_Data_Pipeline:
 
     def schema_mapping(self, df, columns, datatypes):
         n = len(columns)
-        df.rename(columns=columns, inplace=True)
+        
         for i in range(n):
             col = columns[i]
             datatype = datatypes[i]
