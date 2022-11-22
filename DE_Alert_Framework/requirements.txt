@@ -1,0 +1,2 @@
+python3 -m pip install google-cloud-storage
+## stl_data_engineering/alert_common_config

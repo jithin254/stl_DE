@@ -1,0 +1,98 @@
+{
+  "TESTING": {
+    "Subject": " Table upload failed from Testing on {} ",
+    "From": "donotreply@stl.tech",
+    "To": ["shoaib.nadaf@stltech.in"],
+    "message_body": "Hello Team,\nSAP to Bigquery Workflow Failed \n"
+   },
+    "Nagios_Logs": {
+      "Subject": "Upload Failed to GCP - Nagios Alerts Bot Logs {}",
+      "From": "data.engineering@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hi Team,\n The logs for Nagios WhatsApp BOT for date: {} Failed to upload to GCP.\n \n \n Data Engineering Team \n"	  
+    },
+	"Nagios_FNF": {
+      "Subject": "file not found in gcs - Nagios Alerts Bot Logs {}",
+	  "Subject_2": "Empty File Received - Nagios Alerts Bot Logs {}",
+      "From": "data.engineering@stl.tech",
+      "To": ["rpa.de.notification@stl.tech"],
+      "message_body": "Hi Team,\n The logs for Nagios WhatsApp BOT for date: {} File not found in GCS.\n \n \n Data Engineering Team \n",
+      "message_body_2": "Hi Team,\n Empty file recevied of logs for Nagios WhatsApp BOT for date: {}.\n\n"
+    },
+	"Nagios_system_Logs": {
+      "Subject": " Cloud SQL table upload failed from Nagios system log workflow on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nNagios Host Information failed to load logs from Nagios API into Cloud SQL \n"
+    },
+    "SFDC": {
+      "Subject": " Table upload failed from salesforce workflow on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nSFDC to Bigquery Workflow Failed \n"
+    },
+    "SAP_HANA": {
+      "Subject": " Table upload failed from hana workflow on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nSAP to Bigquery Workflow Failed \n"
+    },
+    "HR": {
+      "Subject": " Table upload failed from HR workflow on {} ",
+      "Subject_2": "DET Alert - File Not Received {}",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nHR to Bigquery Workflow Failed (check logs)\n",
+      "message_body_2": "Hi Team,\n Empty file recevied of logs for Nagios WhatsApp BOT for date: {}.\n\n"
+	
+    },
+    "MACHINE_CORE_SINTER": {
+      "Subject": " File Not Found at source on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nMACHINE DATA CORE SINTER to BIGQUERY Workflow Failed \n"
+    },
+    "SIGNAVIO": {
+      "Subject": " Table upload failed from signavio workflow on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nSIGNAVIO to Bigquery Workflow Failed \n"
+    },
+    "Sales_Forecasting": {
+      "Subject": " Sales Forecasting workflow Failed On {}",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nSales Forecasting Workflow Failed \n"
+    },
+    "FIELD_FORCE": {
+      "Subject": " Table upload failed from FieldForce workflow on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nFIELD_FORCE to Bigquery Workflow Failed \n"
+    },
+    "WALUJ_ORACLE": {
+      "Subject": " Table upload failed from waluj oracle workflow on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nWALUJ_ORACLE to Bigquery Workflow Failed \n"
+    },
+    "SHENDRA_ORACLE": {
+      "Subject": " Table upload failed from shendra oracle workflow on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["dataengg.team@stl.tech"],
+      "message_body": "Hello Team,\nSHENDRA_ORACLE to Bigquery Workflow Failed \n"
+    },
+    "SHENDRA_DRAW_MACHINE_DATA": {
+      "Subject": "Shendra Draw Machine Data Workflow Failed on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["jithin.poulose@stl.tech","abhaykumar.tompe@stl.tech"],
+      "message_body": "Hello Team,\n\t Shendra Draw Machine Data to Bigquery Workflow Failed \n"
+    },
+    "SHENDRA_GLASS_MACHINE_DATA": {
+      "Subject": "Shendra Glass Machine Data Workflow Failed on {} ",
+      "From": "donotreply@stl.tech",
+      "To": ["jithin.poulose@stl.tech","abhaykumar.tompe@stl.tech"],
+      "message_body": "Hello Team,\n\t Shendra Glass Machine Data to Bigquery Workflow Failed \n"
+    }
+    
+  }

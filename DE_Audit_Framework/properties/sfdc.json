@@ -1,0 +1,27 @@
+{
+    "source": "SFDC",
+    "machine_no": "",
+    "plant": "",
+    "load_stage": "",
+    "load_type": "INCREMENTAL",
+    "table": "ACCOUNT",
+    "dataset": "sfdc",
+    "maxTquery": "",
+    "sourcecount": "SELECT COUNT(*) from ACCOUNT",
+    "bqcount": "SELECT COUNT(*) from stl-staging-data.sfdc.Account2",
+    "view_count": "SELECT COUNT(*) from stl-staging-data.sap_data.ACCOUNT_V",
+    "query": "select * from ACCOUNT",
+    "schema": [
+        "id",
+        "Email",
+        "Year"
+        
+    ],
+    "bqConnection": {
+        "destinationTable": "sfdc.ACCOUNT",
+        "view_name": "ACCOUNT_V",
+        "projectID": "stl-staging-data",
+        "mode": "replace"
+    },
+    "filename": "lmd_afpo.txt"
+}

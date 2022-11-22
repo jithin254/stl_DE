@@ -1,0 +1,25 @@
+{
+    "source": "SAP_HANA",
+    "machine_no": "",
+    "plant": "",
+    "load_stage": "",
+    "load_type": "FULL",
+    "table": "AFPO",
+    "dataset": "sap_data",
+    "maxTquery": "",
+    "sourcecount": "SELECT COUNT(*) from SAPPST.AFPO",
+    "bqcount": "SELECT COUNT(*) from stl-staging-data.sap_data.afpo",
+    "view_count": "SELECT COUNT(*) from stl-staging-data.sap_data.AFPO_V",
+    "query": "select * from SAPPST.AFPO",
+    "schema": [
+        "id",
+        "Email"
+    ],
+    "bqConnection": {
+        "destinationTable": "sap_data.afpo",
+        "view_name": "AFPO_V",
+        "projectID": "stl-staging-data",
+        "mode": "replace"
+    },
+    "filename": "lmd_afpo.txt"
+}

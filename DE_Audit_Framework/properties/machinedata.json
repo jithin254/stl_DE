@@ -1,0 +1,26 @@
+{
+    "source": "SHENDRA_CORE_DEP",
+    "machine_no": "DC01",
+    "plant": "SHENDRA",
+    "load_stage": "shendra to gcs",
+    "load_type": "MOVE",
+    "table": "shendra_coredep",
+    "dataset": "stl_machine_data",
+    "maxTquery": "",
+    "sourcecount": "",
+    "bqcount": "select count(*) from stl-staging-data.stl_machine_data.shendra_coredep",
+    "view_count": "SELECT COUNT(*) from stl-staging-data.stl_machine_data.shendra_coredep",
+    "query": "",
+    "schema": [
+        "id",
+        "Email",
+        "Year"
+    ],
+    "bqConnection": {
+        "destinationTable": "stl_machine_data.shendra_coredep",
+        "view_name": "shendra_coredep_V",
+        "projectID": "stl-staging-data",
+        "mode": ""
+    },
+    "filename": "lmd_afpo.txt"
+}

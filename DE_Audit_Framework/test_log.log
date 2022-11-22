@@ -1,0 +1,15 @@
+Start
+Extract information...
+     source machine_no  ...         job_end_time job_status
+0  SAP_HANA             ...  2020-09-29 10:45:50       TRUE
+
+[1 rows x 17 columns]
+Data started loading to BQ......
+
+
+Time Required to store data :  3.0854814052581787  sec
+######## Data loaded to BQ successfully !! ########
+
+------------------------------------------------------------------
+
+Auditing Table populated
