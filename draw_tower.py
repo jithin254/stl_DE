@@ -90,7 +90,7 @@ if __name__ == "__main__":
                         )
 
                         # gen{x}_pivot_table
-                        pipeline.set_table("f{gen}_pivot")
+                        pipeline.set_table(f"{gen}_pivot")
                         pivot_df = process_pivot_csv(df)
                         pipeline.upload_to_bq(pivot_df)
 
