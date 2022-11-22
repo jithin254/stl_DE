@@ -17,7 +17,7 @@ def read_multiple_csvs(pipeline, folder):
 
     for blob in blobs:
         print("Reading and concatenating ", blob.name)
-        file = pipeline.read_file_as_dataframe(blob.name, index_col=False)
+        file = pipeline.read_file_as_dataframe(blob, index_col=False)
         df = pd.concat([df, file])
 
     return df
