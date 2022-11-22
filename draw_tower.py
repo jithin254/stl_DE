@@ -24,7 +24,8 @@ def read_multiple_csvs(pipeline, folder):
 
 def process_csv(df, machine):
     # Cleaning up the df
-    df["DT_No"] = f"DT-{machine}"
+    df["DT_No"] = machine
+    df.rename(columns={";Date": "Date"}, inplace=True)
     tagnames = json.load(
         open(f"/home/dataengineer/shendra_draw_tower/tags/{machine}_tags.json")
     )
@@ -67,7 +68,7 @@ if __name__ == "__main__":
                 pipeline = Machine_Data_Pipeline(
                     plant, process, machine, dataset, f"{gen}_new"
                 )
-                print(f"___________DT-{machine}_____________\n\n")
+                print(f"___________{machine}_____________\n\n")
 
                 folders = get_folders(pipeline)
                 if not folders:
