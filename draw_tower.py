@@ -50,7 +50,7 @@ def process_pivot_csv(df):
 
 if __name__ == "__main__":
 
-    plant = "Shendra_Glass"
+    plant = "Shendra_Draw"
     process = "Draw_Tower"
     # dataset = "Shendra_Draw_Tower"
     # machines = {
