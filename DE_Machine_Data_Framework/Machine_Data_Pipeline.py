@@ -129,7 +129,7 @@ class Machine_Data_Pipeline:
             error_blob_name = blob.name.replace("Staging/", "Error/")
             error_blob = source_bucket.rename_blob(blob, error_blob_name)
 
-    def schema_mapping(df, columns, datatypes):
+    def schema_mapping(self, df, columns, datatypes):
         n = len(columns)
         df.rename(columns=columns, inplace=True)
         for i in range(n):
