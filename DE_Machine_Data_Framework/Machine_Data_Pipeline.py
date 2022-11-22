@@ -17,7 +17,7 @@ class Machine_Data_Pipeline:
     bucket = "stl_machine_data"
     archive_bucket = "stl_machine_data_archive"
     project = "stl-staging-data"
-    #dataset = "data_engineering"
+    # dataset = "data_engineering"
 
     def __init__(self, plant, process, machine, dataset=None, table=None):
         self.plant = plant
@@ -72,7 +72,7 @@ class Machine_Data_Pipeline:
         """
         Adds error to the dictionary of errors
         """
-        self.error[file] = error
+        self.errors[file] = error
 
     def has_errors(self):
         """

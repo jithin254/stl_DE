@@ -74,7 +74,7 @@ if __name__ == "__main__":
                     continue
 
                 for folder in folders:
-                    foldername = folder.name.rstrip("/").split("/")[-1]
+                    foldername = folder.rstrip("/").split("/")[-1]
                     try:
                         print(folder)
                         df = read_multiple_csvs(pipeline, folder)
@@ -98,6 +98,7 @@ if __name__ == "__main__":
                         )
 
                     except Exception as e:
+                        print(e)
                         pipeline.move_to_error(folder)
                         pipeline.add_error(foldername, e)
                         pipeline.update_audit_table(
